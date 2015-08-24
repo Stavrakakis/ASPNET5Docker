@@ -5,6 +5,6 @@ RUN apt-get install -y git
 RUN git clone https://github.com/Stavrakakis/VNextApp.git
 
 WORKDIR /VNextApp
-RUN kpm restore
+RUN dnu restore
 EXPOSE 5004
-ENTRYPOINT k kestrel
+ENTRYPOINT dnx . kestrel
