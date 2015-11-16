@@ -1,7 +1,7 @@
 FROM microsoft/aspnet
 
 
-RUN apt-get install -y git 
+RUN apt-get install -y git-all
 RUN git clone https://github.com/Stavrakakis/VNextApp.git
 
 WORKDIR /VNextApp
